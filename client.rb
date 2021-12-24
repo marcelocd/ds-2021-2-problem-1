@@ -11,7 +11,6 @@ socket = TCPSocket.open(hostname, port)
 socket.puts gender
 socket.puts height
 
-while line = socket.gets
-  puts line
-end
+puts socket.gets
+
 socket.close
